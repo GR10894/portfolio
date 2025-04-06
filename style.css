@@ -311,6 +311,7 @@ hr {
 
 .content-box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1000px;
 }
@@ -617,6 +618,7 @@ hr {
   .rightSection, .content-right { display: none; }
 
   .cards, .content-box { flex-direction: column; width: 100%; }
+  .content-box {flex-wrap: nowrap; }
   .servise-card { margin: 10px auto; }
 
   .contact-inputs { width: 80vw; }
