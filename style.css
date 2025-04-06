@@ -544,12 +544,12 @@ hr {
 /* ---------------------------------- */
 
 @keyframes left {
-  from {transform: translateX(-200px);}
+  from {transform: translateX(-150px);}
   to {transform: translateX(0);}
 }
 
 @keyframes right {
-  from {transform: translateX(200px);}
+  from {transform: translateX(150px);}
   to {transform: translateX(0);}
 }
 
