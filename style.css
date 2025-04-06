@@ -543,7 +543,7 @@ hr {
 
 @keyframes appear {
   from { width: 0vw; }
-  to { width: 60vw; } /* adjust as needed */
+  to { width: auto; } /* adjust as needed */
 }
 
 @keyframes left {
