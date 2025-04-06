@@ -75,13 +75,25 @@ button:hover {
   cursor: pointer;
 }
 
+/* Default state */
 hr {
-  width: 0vw; /* initial state for animation */
-  transition: all 0.5s ease-in;
-  animation: appear linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  width: 0vw;
+  transition: width 0.5s ease-in;
 }
+
+/* Scroll-Driven Animation (modern browsers) */
+@supports (animation-timeline: view()) {
+  .animated-hr {
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+/* Fallback animation triggered by JS */
+hr.appear {
+  width: 53.333vw;
+}
+
 
 /* ---------------------------------- */
 /* NAVBAR */
