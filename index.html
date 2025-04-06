@@ -216,27 +216,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
-    <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hr = document.querySelector(".animated-hr");
-
-    if (!CSS.supports("animation-timeline: view()")) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            hr.classList.add("appear");
-            observer.unobserve(hr);
-          }
-        });
-      }, {
-        threshold: 0.4 // same as 40% of viewport
-      });
-
-      observer.observe(hr);
-    }
-  });
-</script>
-
   </body>
 </html>
 
