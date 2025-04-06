@@ -33,6 +33,16 @@ body {
   color: var(--txt);
 }
 
+body.loading {
+  overflow: hidden;
+}
+
+/* Optional: hide scrollbar visuals in WebKit browsers */
+body.loading::-webkit-scrollbar {
+  display: none;
+}
+
+/* For WebKit browsers like Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 15px;
   height: 12px;
@@ -525,6 +535,7 @@ hr {
   width: 100%;
   position: fixed;
   z-index: 100;
+  transition: opacity 0.5s ease;
 }
 
 /* ---------------------------------- */
