@@ -80,6 +80,10 @@ hr {
   animation: appear linear forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  border: 0;
+  height: 1px;
+  background-color: var(--line);
+  margin: 40px 84px
 }
 
 /* ---------------------------------- */
