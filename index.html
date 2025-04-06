@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="servises.css">
     <link rel="stylesheet" href="contact.css">
   </head>
-  <body>
+  <body class="loading">
     <div id="loader"></div>
 
     <!-- navbar -->
@@ -160,16 +160,24 @@
       <section id="contact">
         <div class="content-container">
           <form action="https://api.web3forms.com/submit" method="POST" class="content-left">
-              <div class="contact-left-tittle">
-                  <h2 class="h2">Message Me</h2>
-                  <hr class="hr" style="animation: none;">
-              </div>
-              <input type="hidden" name="access_key" value="d1d9b83e-90fd-476b-b7bb-cf5bd363bd0b">
-              <input type="text" name="name" placeholder="Your Name..." class="contact-inputs" required autocomplete="off">
-              <input type="email" name="email" placeholder="Your Email..." class="contact-inputs" required autocomplete="off">
-              <textarea name="message" placeholder="Your Message..." class="contact-inputs" required autocomplete="off"></textarea>
-              <button type="submit">Submit <img src="arrow_icon.png" alt=""></button>
-          </form>
+            <div class="contact-left-tittle">
+              <h2 class="h2">Message Me</h2>
+              <hr class="hr" style="animation: none;">
+            </div>
+          
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="d1d9b83e-90fd-476b-b7bb-cf5bd363bd0b">
+          
+            <!-- Redirect to success page -->
+            <input type="hidden" name="redirect" value="https://gr10894.github.io/success/">
+          
+            <!-- Form Fields -->
+            <input type="text" name="name" placeholder="Your Name..." class="contact-inputs" required autocomplete="off">
+            <input type="email" name="email" placeholder="Your Email..." class="contact-inputs" required autocomplete="off">
+            <textarea name="message" placeholder="Your Message..." class="contact-inputs" required autocomplete="off"></textarea>
+          
+            <button type="submit">Submit <img src="arrow_icon.png" alt=""></button>
+          </form>          
           <div class="content-right">
               <img src="images/right_img.png" alt="">
           </div>
@@ -210,3 +218,7 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
+
+
+<!-- this website is fully safe.this website not access any type of data. and i have all type of malware files. please solve my problem -->
