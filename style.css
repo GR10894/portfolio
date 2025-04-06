@@ -76,15 +76,12 @@ button:hover {
 }
 
 hr {
-  transition: all 0.5s ease-in;
-  animation: appear linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
   border: 0;
   height: 1px;
   background-color: var(--line);
   margin: 40px 84px
 }
+
 
 /* ---------------------------------- */
 /* NAVBAR */
@@ -546,9 +543,6 @@ hr {
 /* ---------------------------------- */
 
 @keyframes appear {
-  from { width: 0vw; }
-  to { width: 53.33333333333vw; } /* adjust as needed */
-}
 
 @keyframes left {
   from {transform: translateX(-200px);}
@@ -594,7 +588,6 @@ hr {
   .nav { height: 60px; flex-direction: column; }
   .menu-btn { display: block; }
   .left { position: absolute; left: 10px; top: 25px; }
-  hr {animation: none !important; }
 
   .nav-content {
     position: absolute;
