@@ -76,7 +76,6 @@ button:hover {
 }
 
 hr {
-  width: 0vw; /* initial state for animation */
   transition: all 0.5s ease-in;
   animation: appear linear forwards;
   animation-timeline: view();
