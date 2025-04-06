@@ -543,8 +543,6 @@ hr {
 /* ANIMATIONS */
 /* ---------------------------------- */
 
-@keyframes appear {
-
 @keyframes left {
   from {transform: translateX(-200px);}
   to {transform: translateX(0);}
