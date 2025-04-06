@@ -25,6 +25,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -295,7 +296,6 @@ hr {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 25px;
 }
